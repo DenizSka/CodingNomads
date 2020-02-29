@@ -1,0 +1,15 @@
+'''
+
+Using string slicing, take in the user's name and print out their name translated to pig latin.
+For the purpose of this program, we will say that any word or name can be
+translated to pig latin by moving the first letter to the end, followed by "ay".
+
+For example: ryan -> yanray, caden -> adencay
+
+'''
+
+name_input = input("please enter your first name:")
+first_letter = name_input[0]
+pig_latin = name_input[1:] + first_letter + "ay"
+
+print(pig_latin)
